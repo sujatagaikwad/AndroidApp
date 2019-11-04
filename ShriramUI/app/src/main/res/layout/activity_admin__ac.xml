@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_AC"
+    android:background="#fff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="#34776E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imagewashing"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/washing"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="81dp" />
+    <TextView
+        android:id="@+id/textwashing"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Choose Your Service..?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="250dp"
+        android:id="@+id/cardview_1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lastpage"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/Repair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repair price:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/Rupees"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="250dp"
+        android:hint="Rupees">
+
+    </TextView>
+        <TextView
+            android:id="@+id/editwashing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Rs.0 Visiting Charge. Repair And spare will be applicable if you decide to go ahead with service ."
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="487dp"
+        android:layout_marginTop="390dp"
+        android:id="@+id/cardviewac">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lastpage"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/textinstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ac Clening(Working ACs Only)"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/installRepair"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text=" Price:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/installRupees"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="250dp"
+            android:hint="Rupees" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:text="Deep Clening The AC For Fresh Air"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="568dp"
+        android:layout_marginTop="560dp"
+        android:id="@+id/cardviewinstall">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lastpage"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Installation/Un-installation"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/inunRepair"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" Price:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/inunRupees"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Rupees"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

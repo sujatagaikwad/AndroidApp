@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_refrigerator"
+    android:background="#fff">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="#34776E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imagewashing"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/refri"
+       />
+
+    <TextView
+        android:id="@+id/textwashing"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="What service do you need..?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+       android:layout_marginTop="300dp"
+        android:id="@+id/cardrefrigeratormachine">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lastpage"
+            android:layout_marginTop="5dp"/>
+        <TextView
+        android:id="@+id/Repair"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:text="Repair price:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+            android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/Rupees"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="250dp"
+        android:layout_marginTop="30dp"
+        android:hint="Rupees"
+        android:textSize="20dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/editwashing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Rs.0 Visiting Charge. Repair And spare will be applicable if you decide to go ahead with service ." />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="480dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skilled and Verified Technivians."
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 Day Service Guarantee"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spare parts warranty 3 month to 6 month depends OFF spare parts"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:textColor="#000"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

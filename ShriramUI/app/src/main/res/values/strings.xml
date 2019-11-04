@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ShriramUI</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_Profile">profile</string>
+    <string name="title_MyBooking">Booking</string>
+    <string name="title_HelpCenter">Help</string>
+    <string name="title_Logout">logout</string>
+
+</resources>

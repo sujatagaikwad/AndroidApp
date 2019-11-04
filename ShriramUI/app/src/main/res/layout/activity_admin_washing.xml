@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_washing"
+    android:background="#fff">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu"
+            android:background="#34776E"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imagewashing"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/washing"
+         />
+
+    <TextView
+        android:id="@+id/textwashing"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="What service do you need..?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="270dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="284dp"
+        android:id="@+id/cardmicrowave">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lastpage"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/Repair"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Repair price:"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Rupees"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="40dp"
+            android:hint="Rupees">
+
+        </TextView>
+        <TextView
+            android:id="@+id/editwashing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Rs.0 Visiting Charge. Repair And spare will be applicable if you decide to go ahead with service ." />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textinstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Installation / Un-installation"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="500dp"
+        android:id="@+id/cardmicro">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lastpage"
+            android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/installRepair"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Installation/Uninstallation price"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/installRupees"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="60dp"
+            android:hint="Rupees" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

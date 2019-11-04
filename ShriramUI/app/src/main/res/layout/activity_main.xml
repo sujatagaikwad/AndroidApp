@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagemain_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shriramss"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+
+    <ImageView
+        android:id="@+id/imagehome"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="687dp"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageadmin"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="680dp"
+        app:srcCompat="@drawable/ic_person" />
+
+    <ImageView
+        android:id="@+id/imageprofile"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="679dp"
+        app:srcCompat="@drawable/ic_profile" />
+
+
+</RelativeLayout>

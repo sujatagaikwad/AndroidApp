@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shriramui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DisplayLastOrder"></activity>
+        <activity android:name=".Lastorderlist" />
+        <activity android:name=".RowaterInUn_InUn" />
+        <activity android:name=".Login_Form" />
+        <activity android:name=".User_Registration" />
+        <activity android:name=".Washingnotsure_order" />
+        <activity android:name=".WashinfFrontInstall_order" />
+        <activity android:name=".WashingToploadInstall_order" />
+        <activity android:name=".Rowater_service_filter" />
+        <activity android:name=".Rowater_Repair_service" />
+        <activity android:name=".Rowater_inst_Un_install" />
+        <activity android:name=".Rowater_unistall_order" />
+        <activity android:name=".Rowater_install" />
+        <activity android:name=".RowaterRepair_order" />
+        <activity android:name=".Split_Ac_install_Uninsstall" />
+        <activity android:name=".Split_Ac_cleaning_order" />
+        <activity android:name=".SplitAc_repair_order" />
+        <activity android:name=".Ac_install_Uninstall" />
+        <activity android:name=".WindowAc_Cleaning_order" />
+        <activity android:name=".WindowAcRepair_order" />
+        <activity android:name=".Microwave_Order" />
+        <activity android:name=".RefrigerSide_By_Side" />
+        <activity android:name=".RefrigerTripleOrder" />
+        <activity android:name=".RefrigerDoubleOrder" />
+        <activity android:name=".RefrigerSingleOrder" />
+        <activity android:name=".WashingNotSure" />
+        <activity android:name=".WashingTopLoadOrder" />
+        <activity android:name=".WashingFrontOrder" />
+        <activity android:name=".MicrowaveIssue" />
+        <activity android:name=".ChangeToTripleRefri" />
+        <activity android:name=".changeSidebysideRefri" />
+        <activity android:name=".ChangePriceDoubleRefri" />
+        <activity android:name=".ChangepriceFrontLoad" />
+        <activity android:name=".ChangepriceTopload" />
+        <activity android:name=".Splitacchangeperice" />
+        <activity android:name=".WashingTopload" />
+        <activity android:name=".Washing_frontload" />
+        <activity android:name=".SidebysideRefri" />
+        <activity android:name=".TripleRefri" />
+        <activity android:name=".DoubleRefri" />
+        <activity android:name=".SplitAc" />
+        <activity android:name=".Order_displaylistview" />
+        <activity android:name=".DisplayListView" />
+        <activity android:name=".Register" />
+        <activity android:name=".mylist" />
+        <activity android:name=".Changeprice_rowater" />
+        <activity android:name=".Changeprice_micro" />
+        <activity android:name=".Changeprice_ac" />
+        <activity android:name=".Changeprice_refrigerator" />
+        <activity android:name=".Changeprice_washing" />
+        <activity android:name=".Customer_order" />
+        <activity android:name=".Customer_list" />
+        <activity android:name=".Admin" />
+        <activity android:name=".Confirm_order" />
+        <activity android:name=".Admin_Ro" />
+        <activity android:name=".Admin_microwave" />
+        <activity android:name=".Admin_refrigerator" />
+        <activity android:name=".Admin_AC" />
+        <activity android:name=".Admin_washing" />
+        <activity android:name=".Rowater" />
+        <activity android:name=".Acrepair" />
+        <activity android:name=".Microwave" />
+        <activity android:name=".Refrigerator" />
+        <activity android:name=".Washingmachine" />
+        <activity android:name=".Booking" />
+        <activity android:name=".Help" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

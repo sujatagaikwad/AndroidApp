@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_list">
+
+
+    <Button
+        android:id="@+id/btnregi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Cutomer list"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/oder_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="119dp"
+        android:text="Cutomer order" />
+
+    <Button
+        android:id="@+id/washing_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="211dp"
+        android:text="Change price washing machine" />
+
+    <Button
+        android:id="@+id/Re_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="309dp"
+        android:text="Change price Refrigerater machine" />
+
+    <Button
+        android:id="@+id/Ac_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="403dp"
+        android:text="Change price Ac machine" />
+
+    <Button
+        android:id="@+id/micro_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="493dp"
+        android:text="Change price Microwave machine" />
+
+    <Button
+        android:id="@+id/ro_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="586dp"
+        android:text="Change price Ro Water machine" />
+</RelativeLayout>

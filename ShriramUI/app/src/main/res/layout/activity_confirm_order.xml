@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirm_order">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Place Your Order"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/ic_person"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Your Address"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/ic_location"/>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Your City"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/ic_city"/>
+
+    <EditText
+        android:id="@+id/mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Your Mobile no"
+        android:inputType="phone"
+        android:drawableRight="@drawable/ic_mobile"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="568dp"
+        android:layout_marginRight="20dp"
+        android:text="Order Placed"
+        android:background="@drawable/rounded_button" />
+
+    <EditText
+        android:id="@+id/requirement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="451dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Your Requirement"
+        android:drawableRight="@drawable/ic_help"
+        />
+
+
+
+
+</RelativeLayout>
