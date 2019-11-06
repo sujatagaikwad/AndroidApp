@@ -16,9 +16,10 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 
-import org.json.JSONException;
+import org.json.*;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -37,7 +38,7 @@ public class Login_Form extends AppCompatActivity {
     public static final String UserEmail = "";
 
     public static int user_id=-1;
-
+    public UserDetails user=UserDetails.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +101,21 @@ public class Login_Form extends AppCompatActivity {
                 super.onPostExecute(httpResponseMsg);
 
                 progressDialog.dismiss();
+
+                try {
+                    JSONObject json = new JSONObject(httpResponseMsg);
+                    JSONArray server_response=json.getJSONArray("server_response");
+                    if(null != server_response && server_response.length()>0){
+                        JsonObject result=server_response.get(0);
+                        String userId=result.get("id");
+                        user.setUserId(userId);
+                    }
+
+
+
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
 
                 if(httpResponseMsg.equalsIgnoreCase("Data Matched")){
 
